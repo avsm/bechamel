@@ -14,6 +14,7 @@ jobs:
         uses: ocaml/setup-ocaml@v2
         with:
           ocaml-compiler: ocaml.5.0.0,ocaml-option-mingw
+          opam-local-packages: bechamel.opam
           opam-repositories: |
             dra27: https://github.com/dra27/opam-repository.git#windows-5.0
             default: https://github.com/fdopen/opam-repository-mingw.git#opam2
