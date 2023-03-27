@@ -32,7 +32,7 @@ jobs:
       - name: Set-up OCaml
         uses: ocaml/setup-ocaml@v2
         with:
-          ocaml-compiler: ocaml.4.14.0,ocaml-option-mingw
+          ocaml-compiler: 4.14.0
           opam-local-packages: bechamel.opam
           opam-repositories: |
             default: https://github.com/fdopen/opam-repository-mingw.git#opam2
