@@ -8,7 +8,7 @@ let load_file filename =
     let () = really_input ic rs 0 ln in
     Bytes.unsafe_to_string rs
   with
-    End_of_file -> invalid_arg ("EOF reading " ^ filename)
+    End_of_file -> invalid_arg "EOF reading: %S" filename
 
 let sexp_linux = "(-lrt)"
 let sexp_empty = "()"
